@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/villysiu/static/css/main.51706e17.css",
-    "main.js": "/villysiu/static/js/main.098dab82.js",
+    "main.css": "/villysiu/static/css/main.179a95a5.css",
+    "main.js": "/villysiu/static/js/main.aecd6ffd.js",
     "static/js/787.b1c999f6.chunk.js": "/villysiu/static/js/787.b1c999f6.chunk.js",
     "static/media/dmb.gif": "/villysiu/static/media/dmb.7875fd2ce5f4b584484a.gif",
     "static/media/ins_preview.gif": "/villysiu/static/media/ins_preview.282f6bc82347bf63c933.gif",
@@ -9,12 +9,12 @@
     "static/media/230324_Resume_VIlly_Siu.pdf": "/villysiu/static/media/230324_Resume_VIlly_Siu.ccbb1a8e02e4b0550683.pdf",
     "static/media/logo.svg": "/villysiu/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/villysiu/index.html",
-    "main.51706e17.css.map": "/villysiu/static/css/main.51706e17.css.map",
-    "main.098dab82.js.map": "/villysiu/static/js/main.098dab82.js.map",
+    "main.179a95a5.css.map": "/villysiu/static/css/main.179a95a5.css.map",
+    "main.aecd6ffd.js.map": "/villysiu/static/js/main.aecd6ffd.js.map",
     "787.b1c999f6.chunk.js.map": "/villysiu/static/js/787.b1c999f6.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.51706e17.css",
-    "static/js/main.098dab82.js"
+    "static/css/main.179a95a5.css",
+    "static/js/main.aecd6ffd.js"
   ]
 }
