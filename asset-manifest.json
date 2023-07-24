@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/villysiu/static/css/main.08889e26.css",
-    "main.js": "/villysiu/static/js/main.0989a6a2.js",
+    "main.js": "/villysiu/static/js/main.ac246368.js",
     "static/js/787.b1c999f6.chunk.js": "/villysiu/static/js/787.b1c999f6.chunk.js",
     "static/media/dmb_img.png": "/villysiu/static/media/dmb_img.bce0a763e871c56698d3.png",
     "static/media/ZL_img.png": "/villysiu/static/media/ZL_img.91ca39d38459f36c9e3c.png",
@@ -9,11 +9,11 @@
     "static/media/Villy Siu Resume_230426.pdf": "/villysiu/static/media/Villy Siu Resume_230426.477e16f8a21d3a295d5a.pdf",
     "index.html": "/villysiu/index.html",
     "main.08889e26.css.map": "/villysiu/static/css/main.08889e26.css.map",
-    "main.0989a6a2.js.map": "/villysiu/static/js/main.0989a6a2.js.map",
+    "main.ac246368.js.map": "/villysiu/static/js/main.ac246368.js.map",
     "787.b1c999f6.chunk.js.map": "/villysiu/static/js/787.b1c999f6.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.08889e26.css",
-    "static/js/main.0989a6a2.js"
+    "static/js/main.ac246368.js"
   ]
 }
