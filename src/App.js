@@ -3,7 +3,7 @@ import Header from './features/header/Header';
 import Projects from './features/projects/Projects';
 function App() {
   return (
-    <div>
+    <div className="app">
       <Header />
       <Projects />
     </div>

@@ -1,7 +1,7 @@
-import zoo_img from "/Users/villysiu/Documents/Coding/villy_portfolio/villysiu/src/data/images/ZL_img.png"
-import dmb_img from "/Users/villysiu/Documents/Coding/villy_portfolio/villysiu/src/data/images/dmb_img.png"
-import calc_img from "/Users/villysiu/Documents/Coding/villy_portfolio/villysiu/src/data/images/calc_img.png"
-
+import zoo_img from "./images/ZL_img.png"
+import dmb_img from "./images/dmb_img.png"
+import calc_img from "./images/calc_img.png"
+import firstday_img from "./images/firstday.png"
 export const projects=
 [
     {
@@ -41,7 +41,17 @@ export const projects=
         },
         image: calc_img
 
-    }
+    },
+    {
+        title: 'First Day',
+        tech_stack: "",
+        web: "https://villysiu.github.io/first-day/",
+        github: {
+            frontend: 'https://github.com/villysiu/first-day/'
+        },
+        image: firstday_img
+
+    },
    
 ]
 
