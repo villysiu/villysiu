@@ -1,0 +1,91 @@
+#projects {
+    width: 100vw;
+    max-width: 1400px;
+    position: relative;
+    /*height: 800px;*/
+}
+
+/*#projects #progress {*/
+/*    position: absolute;*/
+/*    top: -65px;*/
+/*    left: -15px;*/
+/*    transform: rotate(-90deg);*/
+/*}*/
+
+/*#projects .bg {*/
+/*    stroke: #0b1011;*/
+/*}*/
+
+/*#projects #progress circle {*/
+/*    stroke-dashoffset: 0;*/
+/*    stroke-width: 10%;*/
+/*    fill: none;*/
+/*}*/
+
+/*#progress .indicator {*/
+/*    stroke: var(--accent);*/
+/*}*/
+
+#projects ul {
+    display: flex;
+    list-style: none;
+    height: 1200px;
+    overflow-x: scroll;
+    overflow-y: hidden ;
+    padding: 20px 0;
+    /*flex: 0 0 600px;*/
+    margin: 0 auto;
+    gap: 20px;
+}
+
+#projects ::-webkit-scrollbar {
+    height: 5px;
+    width: 5px;
+    background: #fff3;
+    -webkit-border-radius: 1ex;
+}
+
+/*#example ::-webkit-scrollbar-thumb {*/
+/*    background: var(--accent);*/
+/*    -webkit-border-radius: 1ex;*/
+/*}*/
+
+/*#example ::-webkit-scrollbar-corner {*/
+/*    background: #fff3;*/
+/*}*/
+
+#projects li {
+    flex: 0 0 800px;
+    margin-right: 2rem;
+
+
+}
+
+#project{
+    width: 100vw;
+    margin-bottom: 10rem;
+    background-color: var(--background-light-gray);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.project_wrapper {
+    width: var(--app-width);
+
+
+}
+.project_thumb {
+    width: 100%;
+    border-radius: 1rem;
+}
+.project_image{
+    min-width: 800px;
+    height: 480px;
+    border-radius: 30px;
+    object-fit: cover;
+    object-position: 0 0;
+}
+.card-title {
+    font-size: 2rem;
+    font-weight: bold;
+}

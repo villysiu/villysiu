@@ -1,14 +1,15 @@
-import { projects } from '../../data/ProjectsList';
-import SingleProject from "./SingleProject"
+
+import ProjectScroll from "./ProjectScroll";
 
 const Projects = () => {
     
     
     return (
-        <div className="app-row">
-            {projects.map((project)=>{
-                return <SingleProject project={project} />
-            })}
+        <div id="project">
+            <div className="project_wrapper mt-5">
+            <h1><strong>Projects</strong></h1>
+            <ProjectScroll />
+            </div>
         </div>
     )
 }

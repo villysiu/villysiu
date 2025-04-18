@@ -1,24 +1,26 @@
-import LinkedinLink from "./LinkedinLink"
-import GithubLink from "./GithubLink"
-import EmailMe from "./EmailMe"
-import ResumeLink from "./ResumeLink"
+import './header.css';
+
 const Header = () =>{
     return (
-        <div className="header">
-            
-            <div className="title">Villy Siu</div>
-                
-            
-            <div className="header_contacts">
-                <EmailMe />
-                <div className="social_media">
-                    <ResumeLink />
-                    <LinkedinLink />
-                    <GithubLink />
-                </div>
-            </div>
 
+        <div id="navbar">
+
+            <div className="navbar_content">
+                {/*<div className="nav-text me-4">Home</div>*/}
+                <div className="nav-text mx-4">About Me</div>
+                <div className="nav-text mx-4">
+                    <a href="#projects">Projects</a>
+                </div>
+                <div className="nav-text mx-4">
+                    <a href="#skill">Tech Stack</a>
+                </div>
+                <div className="nav-text ms-4">
+                    <a href="#contact">Contact</a>
+                </div>
+
+            </div>
         </div>
+
     )
 
 }
