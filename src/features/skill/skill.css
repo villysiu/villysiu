@@ -8,6 +8,7 @@
 .skill_wrapper {
     width: var(--app-width);
     /*text-align: left;*/
+    margin: 3rem 0;
 
 
 }

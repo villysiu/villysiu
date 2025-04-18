@@ -63,7 +63,7 @@
 
 #project{
     width: 100vw;
-    margin-bottom: 10rem;
+    /*margin-bottom: 10rem;*/
     background-color: var(--background-light-gray);
     display: flex;
     flex-direction: column;
