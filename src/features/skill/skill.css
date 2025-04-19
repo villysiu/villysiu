@@ -16,7 +16,13 @@
 
     height: calc(var(--app-width) / 3);
     padding: 1rem;
+    margin: 1rem 0;
 
+}
+@media all and  (max-width: 991.98px) {
+    .card {
+        height: unset;
+    }
 }
 .skill_card_content {
     border: 1px solid gray;

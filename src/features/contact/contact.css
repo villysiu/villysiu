@@ -13,5 +13,5 @@
 
 }
 .contact_form{
-    width: 768px;
+    width: var(--app-width);
 }

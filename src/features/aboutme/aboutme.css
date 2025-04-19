@@ -6,7 +6,7 @@
     align-items: center;
 }
 .aboutme_wrapper {
-    width: 1400px;
+    width: var(--app-width);
     display: flex;
     flex-direction: row;
 

@@ -3,7 +3,7 @@ import {CodeSlash} from "react-bootstrap-icons";
 
 const Backend = () =>{
     return (
-        <Col xs={12} sm={4} className="skill_card">
+        <Col xs={12} xl={4} >
             <Card >
                 <Card.Body>
                     <Card.Title>
