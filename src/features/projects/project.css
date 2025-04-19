@@ -29,7 +29,7 @@
 #projects ul {
     display: flex;
     list-style: none;
-    height: 1200px;
+    height: 900px;
     overflow-x: scroll;
     overflow-y: hidden ;
     padding: 20px 0;
@@ -88,4 +88,15 @@
 .card-title {
     font-size: 2rem;
     font-weight: bold;
+}
+@media all and  (max-width: 991.98px) {
+    .project_image{
+        min-width: 80vw;
+        height: 40vw;
+    }
+    #projects li {
+        flex: 0 0 80vw;
+
+
+    }
 }

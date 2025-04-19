@@ -1,28 +1,8 @@
 import {useState, useEffect, useRef} from "react";
-import {Card} from "react-bootstrap";
 const SingleProject = ({project}) => {
 
-    const [show, setShow] = useState(null)
-    
-
     return (
-        // <li key={project.title}
-        //     // onMouseOver = {()=>setShow(true)}
-        //     // onMouseOut = {()=>setShow(false)}
-        // >
-        //     <img src={project.image} className='project_thumb' />
-        //     {
-        //         show &&
-        //         <div className="overlay">
-        //
-        //             <a className="project-link" href={project.web}>{project.title}</a>
-        //             {project.tech_stack &&
-        //             <a className="project-link" href={project.tech_stack}>Tech Stack</a>
-        //             }
-        //         </div>
-        //     }
-        // </li>
-    <li>
+        <li>
 
             <img className="project_image" src={project.image}/>
 
