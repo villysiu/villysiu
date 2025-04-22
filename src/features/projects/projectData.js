@@ -1,8 +1,8 @@
-import zoo_img from "./images/ZL_img.png"
-import dmb_img from "./images/dmb_img.png"
-import calc_img from "./images/calc_img.png"
-import firstday_img from "./images/firstday.png"
-import yumtea_img from "./images/yumtea.png"
+import zoo_img from "../../data/images/ZL_img.png"
+import dmb_img from "../../data/images/dmb_img.png"
+import calc_img from "../../data/images/calc_img.png"
+import firstday_img from "../../data/images/firstday.png"
+import yumtea_img from "../../data/images/yumtea.png"
 export const projects=
 [
     {

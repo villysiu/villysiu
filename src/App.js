@@ -5,6 +5,7 @@ import Projects from "./features/projects/Projects";
 import Skill from "./features/skill/Skill";
 import ContactForm from "./features/contact/ContactForm";
 import Footer from "./features/header/Footer";
+import SlideShow from "./features/projects/SlideShow";
 function App() {
   return (
     <div id="app">
@@ -12,6 +13,7 @@ function App() {
             <Header />
             <AboutMe />
             <Projects />
+
         <Skill />
         <ContactForm />
         <Footer />

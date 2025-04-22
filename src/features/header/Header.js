@@ -13,7 +13,7 @@ const Header = () =>{
                     </div>
                 </a>
 
-                <a href="#projects" className="nav_button">
+                <a href="#project" className="nav_button">
                     <div>
                         Projects
                     </div>
