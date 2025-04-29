@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/villysiu/static/css/main.fc078860.css",
-    "main.js": "/villysiu/static/js/main.a8733591.js",
+    "main.css": "/villysiu/static/css/main.603112ce.css",
+    "main.js": "/villysiu/static/js/main.71f6dc48.js",
     "static/js/787.b1c999f6.chunk.js": "/villysiu/static/js/787.b1c999f6.chunk.js",
     "static/media/yumtea.png": "/villysiu/static/media/yumtea.33e901618ba5bbd1196a.png",
     "static/media/firstday.png": "/villysiu/static/media/firstday.62b48e86cf57fd02ca09.png",
@@ -10,12 +10,12 @@
     "static/media/calc_img.png": "/villysiu/static/media/calc_img.f4b73de28da0087d7c42.png",
     "static/media/Villy Siu Resume_230426.pdf": "/villysiu/static/media/Villy Siu Resume_230426.477e16f8a21d3a295d5a.pdf",
     "index.html": "/villysiu/index.html",
-    "main.fc078860.css.map": "/villysiu/static/css/main.fc078860.css.map",
-    "main.a8733591.js.map": "/villysiu/static/js/main.a8733591.js.map",
+    "main.603112ce.css.map": "/villysiu/static/css/main.603112ce.css.map",
+    "main.71f6dc48.js.map": "/villysiu/static/js/main.71f6dc48.js.map",
     "787.b1c999f6.chunk.js.map": "/villysiu/static/js/787.b1c999f6.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.fc078860.css",
-    "static/js/main.a8733591.js"
+    "static/css/main.603112ce.css",
+    "static/js/main.71f6dc48.js"
   ]
 }
