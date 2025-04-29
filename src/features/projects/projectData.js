@@ -6,6 +6,15 @@ import yumtea_img from "../../data/images/yumtea.png"
 export const projects=
 [
     {
+        title: "AI Travel Planner",
+        github: {
+            frontend: 'https://github.com/villysiu/travelplanner2',
+            backend: 'https://github.com/villysiu/travelplanner_backend'
+        },
+        image: "https://github.com/villysiu/villysiu/blob/main/src/data/images/aitravelplanner.png?raw=true",
+        desc: "The AI Travel Planner is a web app that helps users create personalized travel itineraries using the ChatGPT API and Pexels API. Built with React (frontend) and Node.js/Express (backend), the app generates itineraries based on user preferences like destination, budget, and interests. ChatGPT creates tailored recommendations for activities, restaurants, and attractions, while the Pexels API provides high-quality images to visually enrich the experience. The app’s dynamic interface ensures a smooth, engaging experience, making trip planning easy and enjoyable."
+    },
+    {
         title: "Yum Tea",
         // web: "https://dmbperformanceparts.com/",
         // tech_stack: "",
