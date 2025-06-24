@@ -1,8 +1,56 @@
 #chatbot {
     width: 80%;
+    max-width: calc(var(--app-width) * 0.8);
     border: green 1px solid;
     padding: 2rem;
     border-radius: 12px;
     text-align: center;
     margin-bottom: 5rem;
+}
+
+.chatbot_search {
+    border: 0 transparent;
+}
+.chatbot_search:disabled {
+    cursor: not-allowed;
+}
+.conversation {
+    height: 20rem;
+    overflow-y: auto;
+    width: 100%;
+    border: 1px rgb(206, 212, 218) solid;
+    border-radius: 6px;
+    background-color: rgb(245, 246, 246);
+    margin-bottom: 1rem;
+}
+.conversation_left{
+
+    width: 90%;
+    text-align: left;
+    margin: 0.5rem;
+    display: flex;
+    flex-direction: row;
+}
+.conversation_right{
+    /* width: 90%; */
+    margin: 0.5rem 0.5rem 0.5rem 10%;
+    text-align: right;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+.conversation_left_text, .conversation_right_text {
+    border: 1px rgb(206, 212, 218) solid;
+    border-radius: 6px;
+    padding: 0.5rem;
+    
+}
+.conversation_left_text{
+    background-color: white;
+    margin-left: 0.5rem;
+}
+.conversation_right_text {
+    background-color: lightgreen;
+    margin-right: 0.5rem;
+    min-height: 12px;
 }

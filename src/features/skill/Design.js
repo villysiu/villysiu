@@ -10,7 +10,7 @@ const Design = () =>{
                         <Lightbulb className="me-2"/><h2 style={{ display: 'inline'}}>Design</h2>
                     </Card.Title>
 
-                    <Card.Text>
+                    <div className='card-text'>
                         <ul>
                             <li>Responsive UI
                                 <ul>
@@ -26,7 +26,7 @@ const Design = () =>{
                                 </ul>
                             </li>
                         </ul>
-                    </Card.Text>
+                    </div>
 
                 </Card.Body>
             </Card>

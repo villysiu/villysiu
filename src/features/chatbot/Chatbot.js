@@ -1,47 +1,94 @@
 import './chatbox.css';
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 
-import {Search, Robot} from "react-bootstrap-icons";
-import {Form, InputGroup} from 'react-bootstrap';
-
+import {Search, Robot, PersonFill} from "react-bootstrap-icons";
+import {Form, InputGroup, Spinner} from 'react-bootstrap';
+import Conversations from './Conversations';
 
 const Chatbot = () =>{
     const [loading, setLoading] = useState(false);
     const [error, setError] = useState('');
     const [response, setResponse] = useState('');
     const [userInput, setUserInput] = useState('');
+    const [conversations, setConversations] = useState(['Hello, I am Villy\'s AI assistant. You can ask me anything about Villy.']);
+    const conversationRef = useRef(null);
+
+    const SpinnerMessage = (<Spinner animation="border" size="sm" />);
+
+    const handleSubmit = async () =>{
+        if (!userInput.trim()) return;
+
+        setConversations(prev=>[...prev, userInput, SpinnerMessage]);
+        setLoading(true);
+
+        try {
+            // const response = await axios.post(
+            //     'https://api.openai.com/v1/chat/completions',
+            //     {
+            //         model: 'gpt-3.5-turbo',
+            //         messages: [
+            //             { role: 'system', content: resumePrompt },
+            //             ...newMessages,
+            //         ],
+            //     },
+            //     {
+            //         headers: {
+            //             Authorization: `Bearer YOUR_OPENAI_API_KEY`,
+            //             'Content-Type': 'application/json',
+            //         },
+            //     }
+            // );
+
+            // const botMessage = response.data.choices[0].message;
+            setTimeout(() => {
+                if (conversationRef.current) {
+                    const container = conversationRef.current;
+                    container.scrollTop = container.scrollHeight - container.clientHeight;
+                }
+            }, 100);
+
+            const botResponse = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
+            setTimeout(()=>{
+                setConversations(prev => [...prev.slice(0, -1), botResponse]);
+            }, 5000)
+            
+        } catch (error) {
+            console.error('Error:', error);
+            setConversations(prev => [...prev.slice(0, -1), 'Oops! Something went wrong.' ]);
+        } finally {
+            setLoading(false);
+            setUserInput('');
+        }
+    }
+    
     return(
         <div id="chatbot">
             <Robot size={40}/>
             <h2>Ask Anything about Villy</h2>
+                <Conversations conversations={conversations} conversationRef={conversationRef} />
 
-            <Form>
+           
                 <InputGroup>
                     <Form.Control
                         type="text"
                         placeholder="Example: can you code?"
                         value={userInput}
                         onChange={(e) => setUserInput(e.target.value)}
-                        // onKeyDown={(e) => e.key === 'Enter' && handleSubmit()}
+                        onKeyDown={(e) => e.key === 'Enter' && handleSubmit()}
                     />
                     <InputGroup.Text>
-
-                        {/* <button
-                            // className="search-btn"
-                            // onClick={handleSubmit}
-                            // disabled={!destination || loading} // Disable button if destination is empty
-                        > */}
-                            <Search 
-                            // onClick={handleSubmit}
-                            // disabled={!destination || loading} // Disable button if destination is empty 
-                            />
-                        {/* </button> */}
-
-
+                        <button
+                         className='chatbot_search'
+                        onClick={handleSubmit}
+                        disabled={!userInput || loading} // Disable button if userInput is empty 
+                        >
+                            <Search />
+                        </button>
+                       
                     </InputGroup.Text>
                 </InputGroup>
 
-            </Form>
+            
         </div>
     )
 }

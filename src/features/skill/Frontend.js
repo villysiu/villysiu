@@ -10,7 +10,7 @@ const Frontend = () =>{
                         <CodeSlash className="me-2"/><h2 style={{ display: 'inline'}}>Frontend Development</h2>
                     </Card.Title>
 
-                    <Card.Text>
+                    <div className='card-text'>
                         <ul>
                             <li>ReactJs/JavaScript</li>
                             <li>state management and handle asynchronous API calls and side effects
@@ -21,7 +21,7 @@ const Frontend = () =>{
                                 </ul>
                             </li>
                         </ul>
-                    </Card.Text>
+                    </div>
 
                 </Card.Body>
             </Card>
