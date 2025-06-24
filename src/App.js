@@ -6,12 +6,15 @@ import Skill from "./features/skill/Skill";
 import ContactForm from "./features/contact/ContactForm";
 import Footer from "./features/header/Footer";
 import SlideShow from "./features/projects/SlideShow";
+import Chatbot from "./features/chatbot/Chatbot";
 function App() {
   return (
     <div id="app">
         {/*<div id="app_content">*/}
             <Header />
+            
             <AboutMe />
+            <Chatbot />
             <Projects />
 
         <Skill />
