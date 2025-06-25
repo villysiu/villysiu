@@ -1,5 +1,5 @@
 import { Github } from "react-bootstrap-icons"
-import {OverlayTrigger, Tooltip} from "react-bootstrap";
+
 const GithubLink = () =>{
     return (
         // <OverlayTrigger placement="bottom" overlay={<Tooltip>Github</Tooltip>}>

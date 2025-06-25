@@ -1,56 +1,62 @@
 import './chatbox.css';
 import React, { useState, useRef } from 'react';
-
-import {Search, Robot, PersonFill} from "react-bootstrap-icons";
+import axios from 'axios';
+import {Search, Robot} from "react-bootstrap-icons";
 import {Form, InputGroup, Spinner} from 'react-bootstrap';
 import Conversations from './Conversations';
+import {resume} from './resume';
 
 const Chatbot = () =>{
     const [loading, setLoading] = useState(false);
-    const [error, setError] = useState('');
-    const [response, setResponse] = useState('');
+    // const [error, setError] = useState('');
     const [userInput, setUserInput] = useState('');
     const [conversations, setConversations] = useState(['Hello, I am Villy\'s AI assistant. You can ask me anything about Villy.']);
     const conversationRef = useRef(null);
 
     const SpinnerMessage = (<Spinner animation="border" size="sm" />);
 
+    const apiKey = process.env.REACT_APP_OPENAI_API_KEY;
+
+// console.log(resume);
     const handleSubmit = async () =>{
         if (!userInput.trim()) return;
 
         setConversations(prev=>[...prev, userInput, SpinnerMessage]);
         setLoading(true);
 
-        try {
-            // const response = await axios.post(
-            //     'https://api.openai.com/v1/chat/completions',
-            //     {
-            //         model: 'gpt-3.5-turbo',
-            //         messages: [
-            //             { role: 'system', content: resumePrompt },
-            //             ...newMessages,
-            //         ],
-            //     },
-            //     {
-            //         headers: {
-            //             Authorization: `Bearer YOUR_OPENAI_API_KEY`,
-            //             'Content-Type': 'application/json',
-            //         },
-            //     }
-            // );
-
-            // const botMessage = response.data.choices[0].message;
-            setTimeout(() => {
+        const prompt = `You are a helpful assistant answering questions about Villy's resume. Her resume: ${resume}. Question: ${userInput}`;
+        console.log(prompt);
+        setTimeout(() => {
                 if (conversationRef.current) {
                     const container = conversationRef.current;
                     container.scrollTop = container.scrollHeight - container.clientHeight;
                 }
             }, 100);
+        try {
+            const response = await axios.post(
+                'https://api.openai.com/v1/chat/completions',
+                {
+                    model: 'gpt-3.5-turbo',
+                    messages: [
+                        { role: 'user', content: prompt },
+                        // temperature: 0.7
+                    ],
+                },
+                {
+                    headers: {
+                        'Authorization': `Bearer ${apiKey}`,
+                        'Content-Type': 'application/json',
+                    },
+                }
+            );
 
-            const botResponse = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
-            setTimeout(()=>{
-                setConversations(prev => [...prev.slice(0, -1), botResponse]);
-            }, 5000)
+            const botResponse = response.data.choices[0].message.content;
+            setConversations(prev => [...prev.slice(0, -1), botResponse]);
+
+            // const botResponse = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
+            // setTimeout(()=>{
+            //     setConversations(prev => [...prev.slice(0, -1), botResponse]);
+            // }, 5000)
             
         } catch (error) {
             console.error('Error:', error);

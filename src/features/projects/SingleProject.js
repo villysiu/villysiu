@@ -1,9 +1,9 @@
-import {useState, useEffect, useRef} from "react";
+
 const SingleProject = ({project}) => {
 
     return (
         <div>
-            <img className="project_image" src={project.image}/>
+            <img className="project_image" src={project.image} alt="" />
             <div className="mx-3 my-4 d-flex flex-wrap align-items-center">
                 <span className="me-3">
             {

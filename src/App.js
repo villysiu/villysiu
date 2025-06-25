@@ -5,7 +5,6 @@ import Projects from "./features/projects/Projects";
 import Skill from "./features/skill/Skill";
 import ContactForm from "./features/contact/ContactForm";
 import Footer from "./features/header/Footer";
-import SlideShow from "./features/projects/SlideShow";
 import Chatbot from "./features/chatbot/Chatbot";
 function App() {
   return (

@@ -1,5 +1,4 @@
 import {Button, Modal} from "react-bootstrap";
-import Resume from "./Resume";
 import {useState} from "react";
 import {PersonVcard} from "react-bootstrap-icons";
 

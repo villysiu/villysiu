@@ -1,5 +1,5 @@
 import {Card, Col} from "react-bootstrap";
-import {CodeSlash, Lightbulb} from "react-bootstrap-icons";
+import { Lightbulb} from "react-bootstrap-icons";
 
 const Design = () =>{
     return (
