@@ -17,7 +17,6 @@ const Chatbot = () =>{
 
     const apiKey = process.env.REACT_APP_OPENAI_API_KEY;
 
-// console.log(resume);
     const handleSubmit = async () =>{
         if (!userInput.trim()) return;
 
@@ -25,7 +24,7 @@ const Chatbot = () =>{
         setLoading(true);
 
         const prompt = `You are a helpful assistant answering questions about Villy's resume. Her resume: ${resume}. Question: ${userInput}`;
-        console.log(prompt);
+        // console.log(prompt);
         setTimeout(() => {
                 if (conversationRef.current) {
                     const container = conversationRef.current;
@@ -34,23 +33,14 @@ const Chatbot = () =>{
             }, 100);
         try {
             const response = await axios.post(
-                'https://api.openai.com/v1/chat/completions',
+                'https://your-site.netlify.app/.netlify/functions/chat',
                 {
-                    model: 'gpt-3.5-turbo',
-                    messages: [
-                        { role: 'user', content: prompt },
-                        // temperature: 0.7
-                    ],
-                },
-                {
-                    headers: {
-                        'Authorization': `Bearer ${apiKey}`,
-                        'Content-Type': 'application/json',
-                    },
+                    userInput,
+                    resume
                 }
             );
 
-            const botResponse = response.data.choices[0].message.content;
+            const botResponse = response.data.message;
             setConversations(prev => [...prev.slice(0, -1), botResponse]);
 
             // const botResponse = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
