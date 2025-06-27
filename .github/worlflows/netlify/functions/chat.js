@@ -1,6 +1,18 @@
 const fetch = require("node-fetch");
-
 exports.handler = async function (event, context) {
+  if (event.httpMethod === "OPTIONS") {
+    // Preflight CORS request
+    return {
+      statusCode: 200,
+      headers: {
+        "Access-Control-Allow-Origin": "*", // OR replace * with your GitHub Pages domain
+        "Access-Control-Allow-Headers": "Content-Type",
+        "Access-Control-Allow-Methods": "POST, OPTIONS"
+      },
+      body: ""
+    };
+  }
+
   try {
     const { userInput, resume } = JSON.parse(event.body);
 
@@ -23,11 +35,17 @@ exports.handler = async function (event, context) {
 
     return {
       statusCode: 200,
+      headers: {
+        "Access-Control-Allow-Origin": "*",
+      },
       body: JSON.stringify({ message: content }),
     };
   } catch (error) {
     return {
       statusCode: 500,
+      headers: {
+        "Access-Control-Allow-Origin": "*",
+      },
       body: JSON.stringify({ error: "Something went wrong." }),
     };
   }
