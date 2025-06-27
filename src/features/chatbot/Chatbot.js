@@ -33,7 +33,7 @@ const Chatbot = () =>{
             }, 100);
         try {
             const response = await axios.post(
-                'https://your-site.netlify.app/.netlify/functions/chat',
+                'https://remarkable-smakager-87809b.netlify.app/.netlify/functions/chat',
                 {
                     userInput,
                     resume
