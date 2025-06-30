@@ -15,15 +15,12 @@ const Chatbot = () =>{
 
     const SpinnerMessage = (<Spinner animation="border" size="sm" />);
 
-    const apiKey = process.env.REACT_APP_OPENAI_API_KEY;
-
     const handleSubmit = async () =>{
         if (!userInput.trim()) return;
 
         setConversations(prev=>[...prev, userInput, SpinnerMessage]);
         setLoading(true);
 
-        const prompt = `You are a helpful assistant answering questions about Villy's resume. Her resume: ${resume}. Question: ${userInput}`;
         // console.log(prompt);
         setTimeout(() => {
                 if (conversationRef.current) {
