@@ -7,6 +7,7 @@ export const projects=
 [
     {
         title: "AI Travel Planner",
+        web: "https://ai-travel-planner-821de.web.app/",
         github: {
             frontend: 'https://github.com/villysiu/travelplanner2',
             backend: 'https://github.com/villysiu/travelplanner_backend'
@@ -16,10 +17,10 @@ export const projects=
     },
     {
         title: "Yum Tea",
-        // web: "https://dmbperformanceparts.com/",
+        web: "https://yumtea-frontend.web.app/",
         // tech_stack: "",
         github: {
-            frontend:"https://github.com/villysiu/zoo-logic-v3/tree/master",
+            frontend:"https://github.com/villysiu/yumtea_sb_frontend",
             backend: "https://github.com/villysiu/yum_tea_sb"
         },
         image: yumtea_img,
