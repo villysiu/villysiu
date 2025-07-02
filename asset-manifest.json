@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/villysiu/static/css/main.0ff75ada.css",
-    "main.js": "/villysiu/static/js/main.369a2102.js",
+    "main.css": "/villysiu/static/css/main.d128272f.css",
+    "main.js": "/villysiu/static/js/main.a898bbd9.js",
     "static/js/787.b1c999f6.chunk.js": "/villysiu/static/js/787.b1c999f6.chunk.js",
     "static/media/yumtea.png": "/villysiu/static/media/yumtea.33e901618ba5bbd1196a.png",
     "static/media/firstday.png": "/villysiu/static/media/firstday.62b48e86cf57fd02ca09.png",
@@ -9,12 +9,12 @@
     "static/media/ZL_img.png": "/villysiu/static/media/ZL_img.91ca39d38459f36c9e3c.png",
     "static/media/calc_img.png": "/villysiu/static/media/calc_img.f4b73de28da0087d7c42.png",
     "index.html": "/villysiu/index.html",
-    "main.0ff75ada.css.map": "/villysiu/static/css/main.0ff75ada.css.map",
-    "main.369a2102.js.map": "/villysiu/static/js/main.369a2102.js.map",
+    "main.d128272f.css.map": "/villysiu/static/css/main.d128272f.css.map",
+    "main.a898bbd9.js.map": "/villysiu/static/js/main.a898bbd9.js.map",
     "787.b1c999f6.chunk.js.map": "/villysiu/static/js/787.b1c999f6.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.0ff75ada.css",
-    "static/js/main.369a2102.js"
+    "static/css/main.d128272f.css",
+    "static/js/main.a898bbd9.js"
   ]
 }
