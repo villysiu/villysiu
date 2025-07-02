@@ -7,13 +7,13 @@ export const projects=
 [
     {
         title: "AI Travel Planner",
-        web: "https://ai-travel-planner-821de.web.app/",
+        web: "https://villysiu.github.io/aitravelplanner",
         github: {
             frontend: 'https://github.com/villysiu/travelplanner2',
             backend: 'https://github.com/villysiu/travelplanner_backend'
         },
         image: "https://github.com/villysiu/villysiu/blob/main/src/data/images/aitravelplanner.png?raw=true",
-        desc: "The AI Travel Planner is a web app that helps users create personalized travel itineraries using the ChatGPT API and Pexels API. Built with React (frontend) and Node.js/Express (backend), the app generates itineraries based on user preferences like destination, budget, and interests. ChatGPT creates tailored recommendations for activities, restaurants, and attractions, while the Pexels API provides high-quality images to visually enrich the experience. The app’s dynamic interface ensures a smooth, engaging experience, making trip planning easy and enjoyable."
+        desc: "AI Travel Planner is a web application that helps users create personalized travel itineraries using the ChatGPT API and Pexels API. Built with React on the frontend and a serverless backend, the app is hosted on Netlify with a CI/CD pipeline for seamless deployment. Users input preferences such as destination, budget, and interests, and the app uses ChatGPT to generate tailored recommendations for activities, restaurants, and attractions. Meanwhile, the Pexels API enriches the experience with high-quality, relevant images for each itinerary item. With a dynamic and intuitive interface, AI Travel Planner makes trip planning smooth, engaging, and enjoyable—from inspiration to execution."
     },
     {
         title: "Yum Tea",
