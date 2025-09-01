@@ -17,7 +17,7 @@ export const projects=
     },
     {
         title: "Yum Tea",
-        web: "https://yumtea-frontend.web.app/",
+        web: "https://villysiu.github.io/yumtea_sb_frontend/",
         // tech_stack: "",
         github: {
             frontend:"https://github.com/villysiu/yumtea_sb_frontend",
